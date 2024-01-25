@@ -256,11 +256,7 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
   }
 }
 4. Hacer las conexiones de la tarjeta con los demas elementos, anteriormente mensionados,  y agregar las librerias como se muestra en la siguente imagen
- ![]()
- ![]()
-
-
-Abrir la terminal de programación y colocar el siguente codigo
+ ![](https://github.com/nijs17/P8_NR_DHT22/blob/main/w4.png)
 ## INSTRUCCIONES DE OPERACION 
 
 
@@ -268,8 +264,8 @@ Abrir la terminal de programación y colocar el siguente codigo
     
     2. Realizar las conexiones mostradas en la imagen anterior.
     
-    3. Mover la sencibilidad del ultrazonico para simular el nivel del agua y asi poder visualizar sus diferentes estados del detector de nivel, como se muestra en la siguiente imagen.
+    3. Mover la sencibilidad del sensor para poder visualizar los resultados de manera grafica.
     
 ## RESUSLTADOS
-Al finalizar tendremos uns detector de nivel que nos mostrara el nivel de nuestro tinaco con LEDS que indican de manera visual el porcentaje de agua que tiene nuestro deposito.
-![](https://github.com/nijs17/P6_Nivel-de-agua/blob/main/l2.png)
+Al finalizar tendremos nuestra tarjeta conectada con nuestro servidor en linea y podremos visualizar en tiempo real los datos de los sensores, como se muestra en la siguiente imagen
+![]()
