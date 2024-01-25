@@ -26,14 +26,17 @@ Para poder realizar esta practica es nesesario contar con conosimientos basicos 
 ## INSTRUCIOES DE ELAVORACION 
 
 1.Buscar un servidor virtual y generar una IP:
+
  a) Entraremos al siguiente link **(https://www.hivemq.com/mqtt/public-mqtt-broker/)** y copiaremos la direccion señalada
  ![](https://github.com/nijs17/P8_NR_DHT22/blob/main/W1.png)
  b)Abriremos el simbolo del sistema y escribimos **nslookup**  seguido del link anteriormente copiado **broker.hivemq.com** esta accion nos generara una IP, copiamos esa IP
  ![](https://github.com/nijs17/P8_NR_DHT22/blob/main/W2.png) 
  2. Armar el proyecto en node red.
- Acontinuacion se muestran los cambios que se le tiene que hacer al proyecto, en los que se encuentran pegar la IP y cambiar el nombre al tipico, elegir al leguaje de programacion que se va a convertir, programar las funciones  y editar los valores de los indicadores y sensores como se muestra en la imagen.
+ 
+ Acontinuacion se muestran los cambios que se le tiene que hacer al proyecto, en los que se encuentran pegar la IP y cambiar el nombre al topico, elegir al leguaje de programacion que se va a convertir, programar las funciones  y editar los valores de los indicadores y sensores como se muestra en la imagen.
  ![](https://github.com/nijs17/P8_NR_DHT22/blob/main/w3.png)
  3. Abrir la terminal de programación y colocar el siguente codigo:
+ 
 
  
  #include <ArduinoJson.h>
@@ -95,6 +98,7 @@ void setup_wifi() {
     delay(500);
     
     Serial.print(".");
+ 
   }
 
   randomSeed(micros());
@@ -106,6 +110,7 @@ void setup_wifi() {
   Serial.println("IP address: ");
   
   Serial.println(WiFi.localIP());
+
 }
 
 void callback(char* topic, byte* payload, unsigned int length) {
@@ -119,6 +124,7 @@ void callback(char* topic, byte* payload, unsigned int length) {
   for (int i = 0; i < length; i++) {
   
     Serial.print((char)payload[i]);
+ 
   }
   
   Serial.println();
@@ -140,6 +146,7 @@ void callback(char* topic, byte* payload, unsigned int length) {
     digitalWrite(BUILTIN_LED, HIGH);  
     
     // Turn the LED off by making the voltage HIGH
+ 
   }
 
 }
@@ -183,8 +190,11 @@ void reconnect() {
       // Wait 5 seconds before retrying
       
       delay(5000);
+    
     }
+  
   }
+
 }
 
 void setup() {
@@ -200,6 +210,7 @@ void setup() {
   client.setCallback(callback);
   
   dhtSensor.setup(DHT_PIN, DHTesp::DHT22);
+
 }
 
 void loop() {
@@ -212,6 +223,7 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
   if (!client.connected()) {
   
     reconnect();
+ 
   }
 
   client.loop();
@@ -253,8 +265,11 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
     Serial.println(output.c_str());
     
     client.publish("Ness", output.c_str());
+ 
   }
+
 }
+
 4. Hacer las conexiones de la tarjeta con los demas elementos, anteriormente mensionados,  y agregar las librerias como se muestra en la siguente imagen
  ![](https://github.com/nijs17/P8_NR_DHT22/blob/main/w4.png)
 ## INSTRUCCIONES DE OPERACION 
