@@ -268,4 +268,4 @@ TempAndHumidity  data = dhtSensor.getTempAndHumidity();
     
 ## RESUSLTADOS
 Al finalizar tendremos nuestra tarjeta conectada con nuestro servidor en linea y podremos visualizar en tiempo real los datos de los sensores, como se muestra en la siguiente imagen
-![]()
+![](https://github.com/nijs17/P8_NR_DHT22/blob/main/w5.png)
