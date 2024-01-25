@@ -29,7 +29,9 @@ Para poder realizar esta practica es nesesario contar con conosimientos basicos 
  a) Entraremos al siguiente link **(https://www.hivemq.com/mqtt/public-mqtt-broker/)** y copiaremos la direccion señalada
  ![](https://github.com/nijs17/P8_NR_DHT22/blob/main/W1.png)
  b)Abriremos el simbolo del sistema y escribimos **nslookup**  seguido del link anteriormente copiado **broker.hivemq.com** esta accion nos generara una IP, copiamos esa IP
- ![]() 
+ ![](https://github.com/nijs17/P8_NR_DHT22/blob/main/W2.png) 
+ 2. Armar el proyecto en node red.
+ Acontinuacion se muestran los cambios que se le tiene que hacer al proyecto, en los que se encuentran pegar la IP y cambiar el nombre al tipico, elegir al leguaje de programacion que se va a convertir, programar las funciones  y editar los valores de los indicadores y sensores como se muestra en la imagen.
  ![]()
  ![]()
  ![]()
