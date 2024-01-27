@@ -1,7 +1,7 @@
 # P8_NR_DHT22
 ## INTRODUCCION
 
-### DESCRIPCION 
+### DESCRIPCION  
 .
 La **Esp32**  es un dispositivo electronico en el cual podemos realizar practicas y simulaciones, en esta practica realizaremos  con  la ayuda de un servidor en linea la simulacion de una conexion wifi entre nuestra tarjeta y  **Node-red**, esta accion nos permitira visualizar en tiempo real nuestras graficas de acuerdo a los valores detectados por nuestros sensores. Cabe aclarar que para esta practica se usara un simulador llamado **https://wokwi.com/**.
 
